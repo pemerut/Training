@@ -1,12 +1,7 @@
-art_friend = {"Rolf", "Anne", "Jen"}
-science_friend = {"Jen", "Charlie"}
+user_input = input("Do you wish to run the program? (yes/no): ")
 
-art_but_not_science = art_friend.difference(science_friend)
-science_but_not_art = science_friend.difference(art_friend)
+while user_input == "yes":
+    print("I'm running!")
+    user_input = input("Do you wish to run the program? (yes/no): ")
 
-not_in_both = art_friend.symmetric_difference(science_friend)
-
-art_and_science = art_friend.intersection(science_friend)
-
-all_friends = art_friend.union(science_friend)
-print(all_friends)
+print("I stopped the program.")
