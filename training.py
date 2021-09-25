@@ -1,7 +1,11 @@
-user_input = input("Do you wish to run the program? (yes/no): ")
+students = [
+    {"name": "Rolf", "grade": 90},
+    {"name": "Bob", "grade": 78},
+    {"name": "Jen", "grade": 100},
+    {"name": "Anne", "grade": 80}
+]
 
-while user_input == "yes":
-    print("I'm running!")
-    user_input = input("Do you wish to run the program? (yes/no): ")
-
-print("I stopped the program.")
+for student in students:
+    name = student["name"]
+    grade = student["grade"]
+    print(f"{name} has a grade of {grade}.")
